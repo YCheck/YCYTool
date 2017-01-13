@@ -1,0 +1,6 @@
+use_frameworks!
+target 'YCYTool_Tests' do
+  pod 'YCYTool', :path => '../'
+  
+  
+end
