@@ -1,0 +1,16 @@
+PODS:
+  - YCYTool (0.1.0)
+
+DEPENDENCIES:
+  - YCYTool (from `../`)
+
+EXTERNAL SOURCES:
+  YCYTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YCYTool: c3e6fc7f1ac21e951f57f016c0933e5a91c5ba78
+
+PODFILE CHECKSUM: 768e1211e58f049fa34a5e9c92ff8ebd4ee5e661
+
+COCOAPODS: 1.1.1
