@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCYTool'
-  s.version          = '0.0.3'
-  s.summary          = 'A short description of YCYTool.'
+  s.version          = '0.0.5'
+  s.summary          = 'YCYTool is tool.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,17 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YCYTool/*.h'
+  s.source_files = 'YCYTool/YCYTool.h'
   s.subspec 'YCYFundation' do |ss|
+  ss.source_files ='YCYTool/YCYFoundation/YCYNSObject/*.h', 'YCYTool/YCYFoundation/YCYFoundation.h'
     ss.subspec 'YCYNSObject' do |sss|
-      sss.source_files = 'YCYTool/YCYFoundation/YCYNSObject/**/*.{h,m}'
-      sss.public_header_files = 'YCYTool/YCYFoundation/YCYNSObject/*.h'
+      sss.source_files = 'YCYTool/YCYFoundation/YCYNSObject/NSObject+{YCYAppInfo,YCYEasyCopy,YCYReflection}.{h,m}'
+#      sss.public_header_files = 'YCYTool/YCYFoundation/YCYNSObject/YCYNSObject.h'
     end    
-    ss.public_header_files = 'YCYTool/YCYFoundation/*.h'
   end
   
   # s.resource_bundles = {
-  #   'YCYTool' => ['YCYTool/Assets/*.png']
+  #   'YCYTool' => ['YCYToolAssets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
