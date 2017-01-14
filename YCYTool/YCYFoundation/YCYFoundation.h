@@ -10,5 +10,7 @@
 #define YCYFoundation_h
 
 #import "YCYNSObject.h"
+#import "YCYNSString.h"
+#import "YCYNSData.h"
 
 #endif /* YCYFoundation_h */
