@@ -20,6 +20,8 @@
 		389B414D1E29DAAF00359F49 /* NSData+YCYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B414B1E29DAAF00359F49 /* NSData+YCYBase64.m */; };
 		389B41501E29DAC500359F49 /* NSString+YCYBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 389B414E1E29DAC500359F49 /* NSString+YCYBase64.h */; };
 		389B41511E29DAC500359F49 /* NSString+YCYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B414F1E29DAC500359F49 /* NSString+YCYBase64.m */; };
+		389B44941E2A859700359F49 /* NSData+YCYHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 389B44921E2A859700359F49 /* NSData+YCYHash.h */; };
+		389B44951E2A859700359F49 /* NSData+YCYHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B44931E2A859700359F49 /* NSData+YCYHash.m */; };
 		41B73841B80FDADCFDFFBDEDE69D395B /* Pods-YCYTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0751D724368E160708F87B20056BE8 /* Pods-YCYTool_Tests-dummy.m */; };
 		41E1168AB39876D37EDACF9920EC0102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		8C8DD2E8A3B5E6B04E99039B5D182CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -56,6 +58,8 @@
 		389B414F1E29DAC500359F49 /* NSString+YCYBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YCYBase64.m"; sourceTree = "<group>"; };
 		389B41521E29DADB00359F49 /* YCYNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCYNSString.h; sourceTree = "<group>"; };
 		389B41531E29DAF200359F49 /* YCYNSData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCYNSData.h; sourceTree = "<group>"; };
+		389B44921E2A859700359F49 /* NSData+YCYHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YCYHash.h"; sourceTree = "<group>"; };
+		389B44931E2A859700359F49 /* NSData+YCYHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YCYHash.m"; sourceTree = "<group>"; };
 		3A1DE560FB6BDEBB64355934DEB16596 /* Pods_YCYTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCYTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5877F0A8BF294012366E8E81C3A4C3D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC79FA72BE29E95FAF03CDC135CEF4F /* Pods-YCYTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YCYTool_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		389B41481E29D9A500359F49 /* YCYNSData */ = {
 			isa = PBXGroup;
 			children = (
+				389B44911E2A856E00359F49 /* data */,
 				389B41531E29DAF200359F49 /* YCYNSData.h */,
 				389B414A1E29DAAF00359F49 /* NSData+YCYBase64.h */,
 				389B414B1E29DAAF00359F49 /* NSData+YCYBase64.m */,
@@ -157,6 +162,15 @@
 				389B414F1E29DAC500359F49 /* NSString+YCYBase64.m */,
 			);
 			path = YCYNSString;
+			sourceTree = "<group>";
+		};
+		389B44911E2A856E00359F49 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				389B44921E2A859700359F49 /* NSData+YCYHash.h */,
+				389B44931E2A859700359F49 /* NSData+YCYHash.m */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		4285219BEBACA35E3F6DECA035481A6C /* Development Pods */ = {
@@ -265,6 +279,7 @@
 				389B414C1E29DAAF00359F49 /* NSData+YCYBase64.h in Headers */,
 				383955CF1E28D8D0004CD20B /* NSObject+YCYAppInfo.h in Headers */,
 				383955CB1E28D8D0004CD20B /* NSObject+YCYReflection.h in Headers */,
+				389B44941E2A859700359F49 /* NSData+YCYHash.h in Headers */,
 				389B41501E29DAC500359F49 /* NSString+YCYBase64.h in Headers */,
 				8F4523A9E4B8880B45ECE6810229CAB2 /* Pods-YCYTool_Tests-umbrella.h in Headers */,
 			);
@@ -362,6 +377,7 @@
 				383955D01E28D8D0004CD20B /* NSObject+YCYAppInfo.m in Sources */,
 				41B73841B80FDADCFDFFBDEDE69D395B /* Pods-YCYTool_Tests-dummy.m in Sources */,
 				383955CE1E28D8D0004CD20B /* NSObject+YCYEasyCopy.m in Sources */,
+				389B44951E2A859700359F49 /* NSData+YCYHash.m in Sources */,
 				389B414D1E29DAAF00359F49 /* NSData+YCYBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

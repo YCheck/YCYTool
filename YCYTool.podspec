@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCYTool'
-  s.version          = '0.0.6'
+  s.version          = '0.0.8'
   s.summary          = 'YCYTool is tool.'
 
 # This description is used to generate tags and improve search results.
@@ -32,10 +32,16 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'YCYTool/YCYTool.h'
   s.subspec 'YCYFundation' do |ss|
-  ss.source_files ='YCYTool/YCYFoundation/YCYNSObject/YCYNSObject.h', 'YCYTool/YCYFoundation/YCYFoundation.h'
+  ss.source_files ='YCYTool/YCYFoundation/**/YCYNSData.h','YCYTool/YCYFoundation/**/YCYNSString.h','YCYTool/YCYFoundation/**/YCYNSObject.h', 'YCYTool/YCYFoundation/YCYFoundation.h'
     ss.subspec 'YCYNSObject' do |sss|
-      sss.source_files = 'YCYTool/YCYFoundation/YCYNSObject/NSObject+{YCYAppInfo,YCYEasyCopy,YCYReflection}.{h,m}','YCYTool/YCYFoundation/YCYNSObject/YCYNSObject.h'
+      sss.source_files = 'YCYTool/YCYFoundation/**/NSObject+{YCYAppInfo,YCYEasyCopy,YCYReflection}.{h,m}','YCYTool/YCYFoundation/**/YCYNSObject.h'
 #      sss.public_header_files = 'YCYTool/YCYFoundation/YCYNSObject/YCYNSObject.h'
+    end
+    ss.subspec 'YCYNSString' do |sss|
+      sss.source_files ='YCYTool/YCYFoundation/**/NSData+YCYBase64.h' ,'YCYTool/YCYFoundation/**/NSString+{YCYBase64}.{h,m}'
+    end
+    ss.subspec 'YCYNSData' do |sss|
+      sss.source_files = 'YCYTool/YCYFoundation/**/NSData+{YCYBase64}.{h,m}'
     end    
   end
   
